@@ -1,0 +1,47 @@
+<!-- 
+1. Add some alt text, and check that it works by misspelling the image URL.
+2. Set the image's correct width and height (hint: it is 200px wide and 171px high), then experiment with other values to see what the effect is.
+3. Set a title on the image.
+ -->
+
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    
+    <body>
+      <!-- local image -->
+      <p>picture1:</p>
+      <img src="images/dinosaur.jpg" alt="Dinosaur" /><hr />
+      <!-- image missing, show alternative text -->
+      <p>picture2:</p>
+      <img src="noPictureHeres.jpg" alt="The head and torso of a dinosaur skeleton;
+      it has a large head with long sharp teeth" /> <hr />
+
+      <!-- use width and height(don't use hotlinking without permission) -->
+      <p>picture3:</p>
+      <img src="https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/images-in-html/dinosaur_small.jpg"
+      alt="Giant Skeleton Dinosaur"
+      title="yes, this is a Skeleton Dinosaur"
+      width="200px"
+      height="171px"> <hr />
+
+      <!-- use captions -->
+      <p>picture4:</p>
+      <figure>
+        <img
+          src="images/dinosaur.jpg"
+          alt="The head and torso of a dinosaur skeleton;
+                  it has a large head with long sharp teeth"
+          width="200px"
+          height="171px" />
+      
+        <figcaption>
+          A T-Rex on display in the Manchester University Museum.
+        </figcaption>
+      </figure>
+    </body>
+    
+</html>
+
